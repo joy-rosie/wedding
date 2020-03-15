@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rosie & Joy's Wedding</title>
+    <meta name="description" content="Rosie & Joy's Wedding">
+    <meta name="keywords" content="rosie, joy, wedding, wedding website, rosie joy wedding">
+    
+    <link href="https://fonts.googleapis.com/css?family=Alice|Zilla+Slab:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles-merged.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    
+    <!-- Fixed navbar -->
+     <!-- navbar-fixed-top -->
+    <nav class="navbar navbar-default probootstrap-navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html" title="uiCookies:Wedding">Rosie <em>&amp;</em> Joy</a>
+        </div>
+
+        <div id="navbar-collapse" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#" data-nav-section="home">Home</a></li>
+            <li><a href="#" data-nav-section="groom-bride">Bride &amp; Groom</a></li>
+            <li><a href="#" data-nav-section="when-where">When &amp; Where</a></li>
+            <li><a href="#" data-nav-section="accommodation">Accommodation</a></li>
+            <li><a href="#" data-nav-section="gallery">Gallery</a></li>
+            <li><a href="#" data-nav-section="rsvp">RSVP</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <section class="flexslider" data-section="home">
+      <div class="container text-intro-wrap">
+        <div class="row">
+          <div class="col-md-12 text-center text-intro probootstrap-animate">
+            <h1>Rosie <em>&amp;</em> Joy</h1>
+            <h2>Getting Married on May 10, 2021 &mdash; Harrogate, UK</h2>
+          </div>
+        </div>
+      </div>
+      <ul class="slides">
+        <li style="background-image: url(img/hero_bg_1.jpg)" data></li>
+        <li style="background-image: url(img/hero_bg_2.jpg)"></li>
+        <li style="background-image: url(img/hero_bg_3.jpg)"></li>
+      </ul>
+    </section>
+
+    <section class="probootstrap-section probootstrap-section-colored probootstrap-wedding-countdown">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center probootstrap-animate"><h4>The Wedding Begins In</h4></div>
+          <div class="col-md-12 probootstrap-animate">
+            <div class="date-countdown"></div>  
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="probootstrap-section probootstrap-bg" data-section="groom-bride">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 probootstrap-groom-bride">
+            
+            <div class="probootstrap-groom probootstrap-animate">
+              <figure>
+                <img src="img/bride_1.jpg" alt="Rosie & Joy Wedding" class="img-responsive">
+              </figure>
+              <span class="probootstrap-caption">The Bride</span>
+              <h2 class="text-center">Rosie Ferguson</h2>
+              <p>I am excited to share with everyone the place where I grew up and to get married to Joy in such a beautiful place.</p>
+			  <p>I recommend visiting Betty's and Harlow Carr during your visit.</p>
+            </div>
+
+            <div class="probootstrap-divider probootstrap-animate"><span>&amp;</span></div>
+
+            <div class="probootstrap-bride probootstrap-animate">
+              <figure>
+                <img src="img/groom_1.jpg" alt="Rosie & Joy Wedding" class="img-responsive">
+              </figure>
+              <span class="probootstrap-caption">The Groom</span>
+              <h2 class="text-center">Joy Tolia</h2>
+              <p>Family and friends mean a lot to me and so I am really excited to have everyone join in on celebrating our wedding.</p>
+			  <p>Let us know what your plans are and if you need recommendations for anything in the area.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="probootstrap-section probootstrap-section-colored" data-section="when-where">
+      <div class="container">
+        <div class="row mb40 text-center">
+          <div class="col-md-12 probootstrap-animate"><h2 class="mt0">When &amp; Where</h2></div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 probootstrap-animate">  
+            <p><img src="img/ruddingpark1.jpg" alt="Rosie & Joy Wedding" class="img-responsive img-rounded"></p>
+            <h3>Wedding Ceremony</h3>
+            <p>To be held at Rudding Park Hotel, Harrogate. Details to follow.</p>
+    
+          </div>
+          <div class="col-md-6 probootstrap-animate">
+            <p><img src="img/ruddingpark2.jpg" alt="Rosie & Joy Wedding" class="img-responsive img-rounded"></p>
+            <h3>Wedding Party</h3>
+            <p>To be held at Rudding Park Hotel, Harrogate. Details to follow.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="map"></div>
+	<script>
+// Initialize and add the map
+function initMap() {
+  // The location
+  var location = {lat: 53.9733426, lng: -1.4925903};
+  // The map, centered at location
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 10, center: location});
+  // The marker, positioned at location
+  var marker = new google.maps.Marker({position: location, map: map});
+}
+    </script>
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuPiJ6mlbLtTnrwHEl9mTVCAyyb1AnlAI&callback=initMap">
+    </script>
+	
+    <div class="probootstrap-section probootstrap-section-colored" data-section="accommodation">
+      <div class="container">
+        <div class="row mb40 text-center">
+          <div class="col-md-12 probootstrap-animate"><h2 class="mt0">Accommodation</h2></div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 probootstrap-animate">  
+            <p><img src="img/wheretostay.jpg" alt="Rosie & Joy Wedding" class="img-responsive img-rounded"></p>
+            <h3>Where to stay</h3>
+			<p>We will be having the Wedding at Rudding Park where there are a variety of Hotel Rooms. If you want to look elsewhere there are lots of hotels in central Harrogate, most of these will be within a 15 minute drive of the wedding venue. If you want to spend a bit longer in the area we recommend hiring a cottage. If you have a specific location/hotel in mind send us the details and we can check location. There is a list of links below to get you started but you should look at the usual booking sites such as booking.com /air bnb etc. </p>			
+			<ul>
+			<li><a href="https://www.ruddingpark.co.uk/" style="color: rgba(255, 255, 255, 0.7);">Rudding Park Hotel</a></li>
+			<li><a href="https://www.the-yorkshire.co.uk/" style="color: rgba(255, 255, 255, 0.7);">Yorkshire Hotel</a></li>
+			<li><a href="https://www.travelodge.co.uk/hotels/595/Harrogate-West-Park-hotel" style="color: rgba(255, 255, 255, 0.7);">Travel Lodge</a></li>
+			<li><a href="https://www.innkeeperslodge.com/hotel/the-kestrel-knaresborough-harrogate" style="color: rgba(255, 255, 255, 0.7);">The InnKeeper's Lodge</a></li>
+			</ul>   
+          </div>
+          <div class="col-md-6 probootstrap-animate">
+            <p><img src="img/thingstodo.jpg" alt="Rosie & Joy Wedding" class="img-responsive img-rounded"></p>
+            <h3>Things to do</h3>
+			<p>If you have not been to Harrogate before there is loads to do. Check out some of the links below. Let us 
+			know if you are staying a bit longer and we can help you with recommendations. </p>	
+			<ul>
+			<li><a href="https://www.bettys.co.uk/" style="color: rgba(255, 255, 255, 0.7);">Bettys - Great for classic afternoon tea</a></li>
+			<li><a href="https://www.visitharrogate.co.uk/things-to-do/valley-gardens-harrogate-p1205921" style="color: rgba(255, 255, 255, 0.7);">Valley Gardens - great for a relaxed stroll</a></li>
+			<li><a href="https://www.nationaltrust.org.uk/brimham-rocks" style="color: rgba(255, 255, 255, 0.7);">Brimham Rocks - Great for a bit of adventure (for outdoor climbing also check out Almscliffe Cragg, Ilkely Moor) </a></li>
+			<li><a href="https://www.nationaltrust.org.uk/fountains-abbey-and-studley-royal-water-garden" style="color: rgba(255, 255, 255, 0.7);">Fountains Abbey</a></li>
+			<li><a href="https://www.rhs.org.uk/gardens/harlow-carr" style="color: rgba(255, 255, 255, 0.7);">Harlow Carr - Great for a relaxed afternoon walk and cakes at Bettys!</a></li>
+			<li><a href="https://www.yorkshire.com/places/north-yorkshire/harrogate/knaresborough" style="color: rgba(255, 255, 255, 0.7);">Knaresborough - Great for a ride on the boats, great views and cute shops.</a></li>
+			<li><a href="https://www.visityork.org/" style="color: rgba(255, 255, 255, 0.7);">York - Awesomely Harry Potter -esque city, you have to visit the Shambles!</a></li>
+			</ul>            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="probootstrap-section" data-section="gallery">
+      <div class="container">
+        <div class="row mb40 probootstrap-animate">
+          <div class="col-md-12 text-center"><h2>Gallery</h2></div>
+        </div>
+
+        <div class="row probootstrap-gutter30">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="row probootstrap-gutter30">
+              <div class="col-md-6 probootstrap-animate">
+                <a class="probootstrap-image image-popup" href="img/img_1.jpg" style="background-image: url(img/img_1.jpg)">
+                  <div class="probootstrap-image-for-popup"><img src="img/img_1.jpg" alt="Rosie & Joy Wedding" class="img-responsive"></div>
+                </a>
+              </div>
+              <div class="col-md-6 probootstrap-animate">
+                <a class="probootstrap-image image-popup" href="img/img_2.jpg" style="background-image: url(img/img_2.jpg)">
+                  <div class="probootstrap-image-for-popup"><img src="img/img_2.jpg" alt="Rosie & Joy Wedding" class="img-responsive"></div>
+                </a>
+              </div>
+            </div>
+            <div class="row probootstrap-gutter30">
+              <div class="col-md-12 probootstrap-animate">
+                <a class="probootstrap-image image-popup" href="img/img_4.jpg" style="background-image: url(img/img_4.jpg)">
+                  <div class="probootstrap-image-for-popup"><img src="img/img_4.jpg" alt="Rosie & Joy Wedding" class="img-responsive"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="row probootstrap-gutter30">
+              <div class="col-md-6">
+                <div class="row probootstrap-gutter30">
+                  <div class="col-md-12 probootstrap-animate">
+                    <a class="probootstrap-image image-popup" href="img/img_3.jpg" style="background-image: url(img/img_3.jpg)">
+                      <div class="probootstrap-image-for-popup"><img src="img/img_3.jpg" alt="Rosie & Joy Wedding" class="img-responsive"></div>
+                    </a>
+                  </div>
+                  <div class="col-md-12 probootstrap-animate">
+                    <a class="probootstrap-image image-popup" href="img/img_5.jpg" style="background-image: url(img/img_5.jpg)">
+                      <div class="probootstrap-image-for-popup"><img src="img/img_5.jpg" alt="Rosie & Joy Wedding" class="img-responsive"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 probootstrap-animate">
+                <a class="probootstrap-image  height-2x image-popup" href="img/img_6.jpg" style="background-image: url(img/img_6.jpg)">
+                  <div class="probootstrap-image-for-popup"><img src="img/img_6.jpg" alt="Rosie & Joy Wedding" class="img-responsive"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END row -->
+
+        <div class="row probootstrap-gutter30">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="row probootstrap-gutter30">
+              <div class="col-md-6">
+                <div class="row probootstrap-gutter30">
+                  <div class="col-md-12 probootstrap-animate">
+                    <a class="probootstrap-image image-popup" href="img/img_7.jpg" style="background-image: url(img/img_7.jpg)">
+                      <div class="probootstrap-image-for-popup"><img src="img/img_7.jpg" alt="Rosie & Joy Wedding" class="img-responsive"></div>
+                    </a>
+                  </div>
+                  <div class="col-md-12 probootstrap-animate">
+                    <a class="probootstrap-image image-popup" href="img/img_8.jpg" style="background-image: url(img/img_8.jpg)">
+                      <div class="probootstrap-image-for-popup"><img src="img/img_8.jpg" alt="Rosie & Joy Wedding" class="img-responsive"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 probootstrap-animate">
+                <a class="probootstrap-image  height-2x image-popup" href="img/img_9.jpg" style="background-image: url(img/img_9.jpg)">
+                  <div class="probootstrap-image-for-popup"><img src="img/img_9.jpg" alt="Rosie & Joy Wedding" class="img-responsive"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="row probootstrap-gutter30">
+              <div class="col-md-6 probootstrap-animate">
+                <a class="probootstrap-image image-popup" href="img/img_10.jpg" style="background-image: url(img/img_10.jpg)">
+                  <div class="probootstrap-image-for-popup"><img src="img/img_10.jpg" alt="Rosie & Joy Wedding" class="img-responsive"></div>
+                </a>
+              </div>
+              <div class="col-md-6 probootstrap-animate">
+                <a class="probootstrap-image image-popup" href="img/img_11.jpg" style="background-image: url(img/img_11.jpg)">
+                  <div class="probootstrap-image-for-popup"><img src="img/img_11.jpg" alt="Rosie & Joy Wedding" class="img-responsive"></div>
+                </a>
+              </div>
+            </div>
+            <div class="row probootstrap-gutter30">
+              <div class="col-md-12 probootstrap-animate">
+                <a class="probootstrap-image image-popup" href="img/img_12.jpg" style="background-image: url(img/img_12.jpg)">
+                  <div class="probootstrap-image-for-popup"><img src="img/img_12.jpg" alt="Rosie & Joy Wedding" class="img-responsive"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END row -->
+      </div>
+    </section>
+
+    <section class="probootstrap-section probootstrap-border-top" data-section="rsvp">
+		<div class="row">
+          <div class="col-md-6 col-md-offset-3">
+			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd_XjSGqeEs10sxsbxeOEdLNlQ-YIYrBVT9LYGn0zuWuKwW7Q/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          </div>
+		</div>
+    </section>
+
+    <section class="probootstrap-section probootstrap-section-colored-darker">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-12 probootstrap-animate"><h2 class="mt0">Wedding here we come</h2></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="probootstrap-footer">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-12">
+            &copy; 2017 <a href="https://uicookies.com/">uiCookies:Wedding</a>. All Rights Reserved. Designed &amp; Developed by <a href="https://uicookies.com">uicookies.com</a> <br> Demo Images by <a href="https://unsplash.com">Unsplash</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    
+
+    <script src="js/scripts.min.js"></script>
+    <script src="js/custom.js"></script>
+
+  </body>
+</html>
