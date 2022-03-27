@@ -272,7 +272,7 @@
 	    year: 2022, // year
 	    month: 4, // month
 	    day: 25, // day
-	    hours: 12, // Default is 0 [0-23] integer
+	    hours: 11, // Default is 0 [0-23] integer
         minutes: 0, // Default is 0 [0-59] integer
         seconds: 0, // Default is 0 [0-59] integer
 		});
